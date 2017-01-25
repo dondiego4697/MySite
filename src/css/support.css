@@ -1,0 +1,49 @@
+/*выравнивание wrapper(родительский) and cell(дочерний)*/
+.wrapper {
+    display: table
+}
+
+.cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.border {
+    border-color: white;
+    border-style: dotted;
+    border-width: 2px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 2000px;
+}
+
+.circle-text {
+    margin: 0 auto !important;
+    width: 350px;
+    height: 350px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.circle-text-hover{
+    filter: blur(2px);
+    -webkit-transform: scale(0.95, 0.95);
+    background-position: center;
+}
+
+.bg-intro-section-hover {
+    filter: blur(0px);
+    -webkit-transform: scale(1.05, 1.05);
+    background-position: center;
+}
+
+
+.shadow {
+    box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.5) inset;
+}
+
+.color-white {
+    color: white;
+}

@@ -1,0 +1,34 @@
+.intro-section {
+    height: 720px;
+    text-align: center;
+    box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.05) inset;
+    z-index: -1;
+}
+
+.bg-intro-section{
+    position: absolute;
+    filter: blur(2px);
+    background: url("../img/mac2.jpg") center;
+    background-size: cover;
+    height: 720px;
+    width: 100%;
+    z-index: -2;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.about-section {
+    height: 720px;
+    padding-top: 50px;
+    z-index: 0;
+}
+
+.skills-section {
+    height: 720px;
+}
+
+.contacts-section {
+    height: 720px;
+}

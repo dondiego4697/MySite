@@ -1,0 +1,86 @@
+/*#F0FFF3 #C6F1E7 #70ACB1 #59606D*/
+.navbar {
+    font-family: 'Karla', sans-serif;
+    /*background-color: rgba(255, 75, 85, 0.55);*/
+    background-color: rgba(255, 246, 254, 0.55);
+    border-color: rgba(255, 255, 255, 0);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 5px;
+    width: auto;
+    font-size: 15px;
+}
+.navbar2{
+    font-family: 'Karla', sans-serif;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(255, 255, 255, 0);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 5px;
+    width: auto;
+    font-size: 15px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: rgba(255, 255, 255, 0);
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: rgba(223, 68, 78, 0);
+}
+
+@media (min-width: 767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-brand{
+        padding: 0;
+        margin: 8px 0 8px 10px !important;
+    }
+    #brand{
+        margin-top: 0 !important;
+    }
+}
+
+.icon-bar {
+    background-color: white !important;
+}
+
+ul > li > a {
+    color: white !important;
+    -webkit-transition: all 0.5s ease;
+}
+
+ul > li > a:hover {
+    color: black !important;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    background-color: rgba(223, 68, 78, 0.49) !important;
+}
+
+.navbar-brand{
+    padding: 0;
+    margin: 0 10px 0 0;
+}
+
+#brand{
+    margin-top: 3px;
+    -webkit-transition: all 1s ease;
+}
+
+#brand:hover{
+    transform: rotateY(180deg);
+}
