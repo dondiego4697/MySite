@@ -3,9 +3,9 @@ $(window).scroll(function () {
     var navbar_fixed_top = $(".navbar-fixed-top");
     var navbar = $(".navbar");
     if (navbar.offset().top > 50) {
-        navbar_fixed_top.addClass("top-nav-collapse");
+        navbar_fixed_top.addClass("top-nav-collapse navbar-bg-color");
     } else {
-        navbar_fixed_top.removeClass("top-nav-collapse");
+        navbar_fixed_top.removeClass("top-nav-collapse navbar-bg-color");
     }
 });
 
@@ -27,13 +27,5 @@ $(document).ready(function () {
         } else {
             btn.addClass("is-active");
         }
-    });
-
-    $(".circle-text").hover(function () {
-        $(".bg-intro-section").addClass("bg-intro-section-hover");
-        $(".circle-text").addClass("circle-text-hover");
-    }, function () {
-        $(".bg-intro-section").removeClass("bg-intro-section-hover");
-        $(".circle-text").removeClass("circle-text-hover");
     });
 });

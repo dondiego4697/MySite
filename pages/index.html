@@ -12,58 +12,77 @@
     <link rel="stylesheet" href="../src/css/text.css"/>
     <link rel="stylesheet" href="../src/css/support.css"/>
     <link rel="stylesheet" href="../src/css/navbar.css"/>
+    <link rel="stylesheet" href="../src/css/slider.css"/>
 
     <link href="../src/css/hamburgers.css" rel="stylesheet">
 </head>
-<body style="background-color: rgb(230, 227, 239)" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="menu">
+
+<body style="background-color: white" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<nav class="navbar navbar-fixed-top" role="navigation" id="menu">
     <div class="container">
-        <div class="navbar-header page-scroll">
+        <div class="navbar-header page-scroll ">
             <button type="button" class="navbar-toggle hamburger--spin" data-toggle="collapse"
                     data-target=".navbar-ex1-collapse" id="btn-menu">
                 <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
                 </span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top"><img id="brand" src="../src/img/black-hole.png" width="45"
-                                                                      height="45"/> </a>
+            <a class="navbar-brand page-scroll" href="#page-top"><h2 id="brand">SDG</h2></a><!--<img id="brand"
+                                                                      src="../src/img/black-hole.png"
+                                                                      width="45"
+                                                                      height="45"/>--> </a>
         </div>
-
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-                <li class="hidden">
-                    <a class="page-scroll nav-item" href="#page-top"></a>
-                </li>
-                <li>
-                    <a class="page-scroll nav-item" href="#about">About me</a>
-                </li>
-                <li>
-                    <a class="page-scroll nav-item" href="#skills">Skills</a>
-                </li>
-                <li>
-                    <a class="page-scroll nav-item" href="#contacts">Contacts</a>
-                </li>
-            </ul>
+        <div class="navbar-center-main">
+            <div class="collapse navbar-collapse navbar-ex1-collapse navbar-center-item">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="page-scroll nav-item" href="#about">About me</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll nav-item" href="#skills">Skills</a>
+                    </li>
+                    <li id="li-page-top">
+                        <a class="page-scroll nav-item no-padding" href="#page-top"><h2 class="no-margin">SDG</h2></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll nav-item" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll nav-item" href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
 
 
 <section id="intro" class="intro-section">
-    <div class="bg-intro-section"></div>
     <div class="container">
-        <div class="row" style="margin-top: 150px">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-6">
-                <div class="circle-text border shadow wrapper">
+        <div class="row" style="margin-top: 150px; margin-bottom: 150px">
+            <div class="col-sm-12">
+                <!--<div class="circle-text border shadow wrapper">
                     <div class="cell">
                         <h1 class="color-white">Stepanov Denis</h1>
-                        <h2 class="color-white">BMSTU student ICS5-33</h2>
+                        <h2 class="color-white">BMSTU student ICS5-43</h2>
+                    </div>
+                </div>-->
+                <div class="circle-text shadow wrapper">
+                    <div class="cell">
+                        <div class="intro-frame">
+                            <ul id="slides">
+                                <li class="slide showing"><img src="../src/img/me2.jpg" width="300px" height="300px"
+                                                               alt="me" class="no-margin no-padding">
+                                </li>
+                                <li class="slide">Slide 2</li>
+                                <li class="slide">Slide 3</li>
+                                <li class="slide">Slide 4</li>
+                                <li class="slide">Slide 5</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <!--<a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>-->
             </div>
-            <div class="col-sm-3"></div>
         </div>
     </div>
 </section>
@@ -71,10 +90,12 @@
 <section id="about" class="about-section">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
-                <img src="../src/img/me.jpg" width="60%" height="60%">
+            <div class="col-sm-12 center">
+                <img src="../src/img/me2.jpg" width="300px" height="300px" alt="me" class="img-circle border2">
             </div>
-            <div class="col-sm-6">
+        </div>
+        <div class="row">
+            <div class="col-sm-12 padding-l-r-more">
                 <h1>Who am I?</h1>
                 <hr>
                 <p class="center">I am 19 years student of <a href="http://www.bmstu.ru" target="_blank">BMSTU</a>.
@@ -86,6 +107,13 @@
                     processing and control systems"
                     and in the same study Software Engeneering.
                     I can handle different kind of problems, and solve them in different ways in short terms.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 padding-l-r-more">
+                <h1>I enjoy...</h1>
+                <hr>
+
             </div>
         </div>
     </div>
@@ -118,6 +146,8 @@
 <script type="text/javascript" src="../vendor/jquery/jquery-3.1.0.min.js"></script>
 <script type="text/javascript" src="../vendor/bootstrap/bootstrap.min.js"></script>
 <script type="text/javascript" src="../vendor/bootstrap/bootstrap-filestyle.min.js"></script>
+
 <script type="text/javascript" src="../src/js/events.js"></script>
+<script type="text/javascript" src="../src/js/slider.js"></script>
 </body>
 </html>

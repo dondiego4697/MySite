@@ -28,7 +28,7 @@
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: #ffffff; /* цвет палочек */
+    background-color: #000000; /* цвет палочек */
     border-radius: 4px;
     position: absolute;
     transition-property: transform;
