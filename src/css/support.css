@@ -42,5 +42,21 @@
     color: white;
 }
 
+.absolute{
+    position: absolute !important;
+}
+
+.padding-l-r-more{
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+}
+
+.no-margin{
+    margin: 0 !important;
+}
+.no-padding{
+    margin: 0 !important;
+}
+
 
 
