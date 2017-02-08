@@ -6,28 +6,12 @@ body {
 .intro-section {
     height: 100%;
     text-align: center;
-    /*box-shadow: 0 0 0 10000px rgba(103, 6, 38, 0.35) inset;*/
-    /*background: url("../img/imac1.png") center;
-    background-size: cover;*/
+    box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.05) inset;
     z-index: -1;
+    background: url("../img/imac1.png") center;
+    background-size: cover;
 }
 
-.mac-screen {
-    display: block;
-    position: absolute;
-    top: 6%;
-    left: 25%;
-}
-
-.mac-frame{
-    display: block;
-    position: relative;
-    width: 100%;
-}
-
-.slides-frame{
-    width: 100%;
-}
 
 .about-section {
     height: 100%;
