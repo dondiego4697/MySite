@@ -14,7 +14,7 @@ $(document).ready(function () {
         event.preventDefault();
 
         var id = $(this).attr('href');
-        var top = $(id).offset().top;
+        var top = $(id).offset().top - 50;
 
         $('body,html').animate({scrollTop: top}, 500);
     });
