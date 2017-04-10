@@ -3,6 +3,7 @@
  */
 import React from 'react';
 import ReactDOM from 'react-dom';
+import TestClass from "./src/TestClass";
 
 function tick() {
     const elem = (
@@ -13,9 +14,23 @@ function tick() {
     );
     ReactDOM.render(
         elem,
-        document.getElementById('root')
+        document.getElementById('clock')
     );
 }
 
-setInterval(tick, 1000);
 
+function render() {
+    const user = {
+        name: 'den',
+        age: 19,
+        avatarUrl: '/src/img/conor.png'
+    };
+    const elem = <TestClass user = {user}/>;
+    ReactDOM.render(
+        elem,
+        document.getElementById('root')
+    )
+}
+
+setInterval(tick, 1000);
+render();
