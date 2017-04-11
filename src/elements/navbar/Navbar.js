@@ -20,7 +20,14 @@ export default class Navbar extends React.Component {
 
     }
 
+
+
     render() {
+        const listItems = Object.keys(this.props.navList).map((key) => {
+            return <li key={`li-${key.toString()}`}><a href={`#${key.toString()}`} className="menu-smooth-scroll">{this.props.navList[key]}</a>
+            </li>;
+        });
+
         return (
             <nav className="navbar">
                 <div className="navbar__nav-wrapper">
@@ -28,14 +35,7 @@ export default class Navbar extends React.Component {
                         <img src="/src/img/logo.png" alt=""/>
                     </a>
                     <ul>
-                        <li><a href="#about" className="menu-smooth-scroll">About Me</a>
-                        </li>
-                        <li><a href="#resume" className="menu-smooth-scroll">Resume</a>
-                        </li>
-                        <li><a href="#portfolio" className="menu-smooth-scroll">Portfolio</a>
-                        </li>
-                        <li><a href="#contact" className="menu-smooth-scroll">Contact</a>
-                        </li>
+                        {listItems}
                     </ul>
                 </div>
             </nav>

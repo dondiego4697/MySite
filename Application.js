@@ -6,9 +6,10 @@ import ReactDOM from "react-dom";
 
 import MainSection from "./src/elements/main-section/MainSection";
 
+
 ReactDOM.render(
-    <MainSection />,
-    document.body
+    <MainSection/>,
+    document.getElementById('app')
 );
 
 

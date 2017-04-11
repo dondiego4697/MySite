@@ -6,8 +6,6 @@ export default class Clock extends React.Component{
     constructor(props){
         super(props);
         this.state = {date: new Date()};
-        console.log(props);
-        console.log(this.state);
     }
 
     componentDidMount() {
