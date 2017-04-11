@@ -10,7 +10,7 @@ module.exports = {
     context: __dirname,
     devtool: debug ? 'inline-sourcemap' : '',
     entry: {
-        application: __dirname + '/Application.js'
+        application: [__dirname + '/Application.js']
     },
     output: {
         path: __dirname + '/dist/',

@@ -1,0 +1,12 @@
+.home-section__content{
+    display: table;
+    height: calc(100vh - 80px);
+    padding-top: 80px;
+    width: 100%;
+    text-align: center;
+    background: rgba(0,0,0, .7);
+}
+
+.home-section__content__info{
+    padding: 25vh;
+}

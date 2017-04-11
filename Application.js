@@ -11,26 +11,3 @@ ReactDOM.render(
     <MainSection/>,
     document.getElementById('app')
 );
-
-
-/*ReactDOM.render(
- <Clock />,
- document.getElementById('clock')
- );
-
-
- function render() {
- const user = {
- name: 'den',
- age: 19,
- avatarUrl: '/src/img/conor.png'
- };
- const elem = <TestClass user={user}/>;
- ReactDOM.render(
- elem,
- document.getElementById('root')
- )
- }
-
-render();
-*/
