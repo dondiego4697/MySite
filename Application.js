@@ -1,36 +1,35 @@
 /**
  * Created by Denis on 09.04.2017.
  */
-import React from 'react';
-import ReactDOM from 'react-dom';
-import TestClass from "./src/TestClass";
+import React from "react";
+import ReactDOM from "react-dom";
 
-function tick() {
-    const elem = (
-        <div>
-            <h1>Opa</h1>
-            <h2>Now is {new Date().toLocaleTimeString()}!</h2>
-        </div>
-    );
-    ReactDOM.render(
-        elem,
-        document.getElementById('clock')
-    );
-}
+import MainSection from "./src/elements/main-section/MainSection";
+
+ReactDOM.render(
+    <MainSection />,
+    document.body
+);
 
 
-function render() {
-    const user = {
-        name: 'den',
-        age: 19,
-        avatarUrl: '/src/img/conor.png'
-    };
-    const elem = <TestClass user = {user}/>;
-    ReactDOM.render(
-        elem,
-        document.getElementById('root')
-    )
-}
+/*ReactDOM.render(
+ <Clock />,
+ document.getElementById('clock')
+ );
 
-setInterval(tick, 1000);
+
+ function render() {
+ const user = {
+ name: 'den',
+ age: 19,
+ avatarUrl: '/src/img/conor.png'
+ };
+ const elem = <TestClass user={user}/>;
+ ReactDOM.render(
+ elem,
+ document.getElementById('root')
+ )
+ }
+
 render();
+*/

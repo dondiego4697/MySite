@@ -14,7 +14,6 @@ export default class TestClass extends React.Component {
     }
 
     avatar(props) {
-        console.log(props);
         return <img className="Avatar" src={props.user.avatarUrl} alt={props.user.name}/>;
     }
 }
