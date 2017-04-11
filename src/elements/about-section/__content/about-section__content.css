@@ -1,0 +1,6 @@
+.about-section__content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 45px 15px;
+}

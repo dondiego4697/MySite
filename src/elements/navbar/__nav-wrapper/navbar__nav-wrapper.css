@@ -42,7 +42,7 @@
     border-bottom-color: #00bcd4;
 }
 
-.navbar__nav-wrapper ul li.current {
+.navbar__nav-wrapper ul li a.current {
     border-bottom-color: #00bcd4;
 }
 

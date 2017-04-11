@@ -1,0 +1,5 @@
+.about-section{
+    margin: 0 25px;
+    height: calc(100vh - 80px);
+    font-family: 'Roboto:400', sans-serif;
+}

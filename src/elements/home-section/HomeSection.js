@@ -19,7 +19,7 @@ export default class HomeSection extends React.Component {
                         <h1 className="home-section__content__text_title">Hi! I'm <span>{this.props.data.name}</span>
                         </h1>
                         <h2 className="home-section__content__text_subtitle">{this.props.data.subtitle}</h2>
-                        <ButtonLink data={{href: 'contacts', name: 'hire me'}}/>
+                        <ButtonLink data={{href: 'contacts', name: 'hire me', isLocale: true}}/>
                     </div>
                 </div>
             </section>

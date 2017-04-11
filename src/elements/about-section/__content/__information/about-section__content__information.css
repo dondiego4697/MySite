@@ -1,0 +1,20 @@
+.about-section__content__information{
+    margin: 15px;
+    flex-grow: 1;
+}
+
+
+h5.about-section__content__information_item{
+    border-bottom: 1px solid #eeeeee;
+    color: #727272;
+    font-size: 14px;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    font-weight: 100;
+    font-family: 'Roboto:300', sans-serif;
+}
+
+h5.about-section__content__information_item span{
+    min-width: 70px;
+    display: inline-block;
+}
