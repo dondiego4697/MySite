@@ -16,7 +16,8 @@ export default class AboutSection extends React.Component {
 
     render() {
         const listInfoItems = Object.keys(this.props.infoItemsList).map((key) => {
-            return <h5 key={`pd-item-${key.toString().toLowerCase()}`} className="about-section__content__information_item">
+            return <h5 key={`pd-item-${key.toString().toLowerCase()}`}
+                       className="about-section__content__information_item">
                 <span>{key.toString()}: </span>{this.props.infoItemsList[key]}</h5>;
         });
         return (
@@ -37,7 +38,7 @@ export default class AboutSection extends React.Component {
                         <ButtonLink data={{href: 'http://icancv.ru/dondiego/', name: 'view resume', isLocale: false}}/>
                     </div>
                     <div className="about-section__content__avatar">
-                        <img className="avatar_me" width={400} height={400} src="/src/img/me.jpg"/>
+                        <img className="avatar_me" src="/src/img/me.jpg"/>
                     </div>
                     <div className="about-section__content__information">
                         <h3 className="about-section__content__text_subtitle">Personal information</h3>
