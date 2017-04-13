@@ -1,0 +1,24 @@
+.home-section__call-to-area{
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 100%;
+    left: 0;
+    max-height: 1px;
+}
+
+.home-section__call-to-area__fab{
+    left: 50%;
+    margin-left: -27px;
+    position: absolute;
+    bottom: 25px;
+    background-color: #fff !important;
+}
+
+.home-section__call-to-area__fab i{
+    color: #444444 !important;
+    font-size: 1.6rem;
+    width: inherit;
+    display: inline-block;
+    text-align: center;
+}

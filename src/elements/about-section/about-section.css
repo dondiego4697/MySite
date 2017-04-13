@@ -3,7 +3,7 @@
     height: 2000px;
     font-family: 'Roboto:400', sans-serif;
     position: relative;
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 
@@ -11,4 +11,14 @@
     .about-section .container{
         width: 85%;
     }
+}
+
+@media only screen and (max-width: 993px){
+    .about-section__inner{
+        margin: 15px 0 !important;
+    }
+}
+
+.about-section__inner{
+    margin: 60px 0;
 }

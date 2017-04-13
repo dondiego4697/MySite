@@ -5,6 +5,7 @@ import * as React from "react";
 import "./home-section.css";
 import "./__content/home-section__content.css";
 import "./__content/__text/home-section__content__text.css";
+import "./__call-to-area/home-section__call-to-area.css";
 import ButtonLink from "../button-link/ButtonLink";
 
 import {Col, Grid, Row} from "react-bootstrap";
@@ -33,6 +34,10 @@ export default class HomeSection extends React.Component {
                             </Col>
                         </Row>
                     </Grid>
+                    <div className="home-section__call-to-area">
+                        <a href="#about" className="btn-floating btn-large home-section__call-to-area__fab">
+                            <i className="mdi-navigation-expand-more"></i></a>
+                    </div>
                 </div>
             </section>
         )
