@@ -18,23 +18,10 @@ export default class AboutSection extends React.Component {
     }
 
     render() {
-        const listInfoItems = Object.keys(this.props.infoItemsList).map((key) => {
-            return <h5 key={`pd-item-${key.toString().toLowerCase()}`}
-                       className="about-section__content__information_item">
-                <span>{key.toString()}: </span>{this.props.infoItemsList[key]}</h5>;
-        });
-        return (
-            <section id="about" className="about-section">
-                <Grid>
-                    <Row>
-                        <div className="about-section__content">
-                            <Col md={4} sm={12}>
-                                <div className="about-section__content__story">
-                                    <h3 className="about-section__content__text_subtitle">My story</h3>
-                                    <p>Hello, I'm a Web and Android Developer from Moscow, Russia. I was born in a small
+        const history = `Hello, I'm a Web and Android Developer from Moscow, Russia. I was born in a small
                                         town
                                         Yoshkar-Ola.
-                                        In 2004 I started to study at Lyceum named after M.V. Lomonosov and graduated in
+                                        In 2004 I started to study at the Lyceum named after M.V. Lomonosov and graduated in
                                         2015 year.
                                         Nowadays I study Information Technology,
                                         at Bauman Moscow State Technical University in the second year, at the
@@ -44,8 +31,28 @@ export default class AboutSection extends React.Component {
                                         and in the same study Software Engeneering.
                                         I can handle different kind of problems, and solve them in different ways in
                                         short
-                                        terms.
-                                    </p>
+                                        terms.`;
+
+        const listInfoItems = Object.keys(this.props.infoItemsList).map((key) => {
+            return <h5 key={`pd-item-${key.toString().toLowerCase()}`}
+                       className="about-section__content__information_item">
+                <span>{key.toString()}: </span>{this.props.infoItemsList[key]}</h5>;
+        });
+
+        const listSocial = this.props.socialList.map((object) => {
+            return <li><a href={object.href.toString()} target="_blank" className="btn-floating waves-effect waves-light">
+                <i className={object.iconClass.toString()}></i></a></li>
+        });
+
+        return (
+            <section id="about" className="about-section">
+                <Grid>
+                    <Row>
+                        <div className="about-section__content">
+                            <Col md={4} sm={12}>
+                                <div className="about-section__content__story">
+                                    <h3 className="about-section__content__text_subtitle">My story</h3>
+                                    <p>{history}</p>
                                     <ButtonLink
                                         data={{
                                             href: 'http://icancv.ru/dondiego/',
@@ -66,9 +73,7 @@ export default class AboutSection extends React.Component {
                                     {listInfoItems}
                                     <div className="about-section__content__information__social">
                                         <ul>
-                                            <li><a href="#" className="btn-floating waves-effect waves-light"><i className="material-icons">send</i></a></li>
-                                            <li><a href="#" className="btn-floating waves-effect waves-light"><i className="material-icons">send</i></a></li>
-                                            <li><a href="#" className="btn-floating waves-effect waves-light"><i className="material-icons">send</i></a></li>
+                                            {listSocial}
                                         </ul>
                                     </div>
                                 </div>

@@ -13,7 +13,7 @@ export default class NavBar extends React.Component {
     }
 
     componentDidMount() {
-        $(".button-collapse").sideNav();
+
     }
 
     componentWillUnmount() {
@@ -23,8 +23,7 @@ export default class NavBar extends React.Component {
 
     render() {
         const listItems = Object.keys(this.props.navList).map((key) => {
-            return <li key={`li-${key.toString()}`}><a href={`#${key.toString()}`}
-                                                       className="menu-smooth-scroll">{this.props.navList[key]}</a>
+            return <li key={`li-${key.toString()}`}><a href={`#${key.toString()}`}>{this.props.navList[key]}</a>
             </li>;
         });
 

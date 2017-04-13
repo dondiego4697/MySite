@@ -27,3 +27,11 @@ h5.about-section__content__information_item span{
     margin-right: 8px;
     background-color: white;
 }
+
+.about-section__content__information__social ul li a{
+    background-color: #00bcd4;
+}
+.about-section__content__information__social ul li a:hover,
+.about-section__content__information__social ul li a:focus{
+    background-color: #008ea4;
+}
