@@ -3,7 +3,7 @@
  */
 import "./main-section.css";
 import * as React from "react";
-import Navbar from "../navbar/Navbar";
+import NavBar from "../navbar/NavBar";
 import HomeSection from "../home-section/HomeSection";
 import AboutSection from "../about-section/AboutSection";
 export default class MainSection extends React.Component {
@@ -14,7 +14,7 @@ export default class MainSection extends React.Component {
     render() {
         return (
             <div>
-                <Navbar
+                <NavBar
                     navList={{about: 'About Me', resume: 'Resume', portfolio: 'Portfolio', contact: 'Contact'}}/>
                 <HomeSection data={{name: 'Denis Stepanov', subtitle: 'Web & Android developer from Moscow'}}/>
                 <AboutSection infoItemsList ={{Name: 'Denis Stepanov', Age: '19 Years', Phone: '+0123456789',

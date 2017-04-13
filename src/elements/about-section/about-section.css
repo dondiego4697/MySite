@@ -1,6 +1,14 @@
-.about-section{
-    margin: 0 25px;
-    height: calc(100vh - 80px);
-    /*height: 1000px;*/
+.about-section {
+    /*height: calc(100vh);*/
+    height: 2000px;
     font-family: 'Roboto:400', sans-serif;
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+@media only screen and (min-width: 993px){
+    .about-section .container{
+        width: 85%;
+    }
 }

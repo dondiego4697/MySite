@@ -31,6 +31,30 @@ module.exports = {
             {
                 test: /\.css$/,
                 loader: ExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader'})
+            },
+            {
+                test: /\.png$/,
+                loader: "url-loader?limit=100000&outputPath=/images/"
+            },
+            {
+                test: /\.jpg$/,
+                loader: "file-loader?limit=100000&outputPath=/images/"
+            },
+            {
+                test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
+                loader: 'url-loader?limit=10000&mimetype=application/font-woff&outputPath=/fonts/'
+            },
+            {
+                test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
+                loader: 'url-loader?limit=10000&mimetype=application/octet-stream&outputPath=/fonts/'
+            },
+            {
+                test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
+                loader: 'file-loader?limit=10000&outputPath=/fonts/'
+            },
+            {
+                test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+                loader: 'url-loader?limit=10000&mimetype=image/svg+xml&outputPath=/images/'
             }
         ]
     },

@@ -1,7 +1,7 @@
 .about-section__content__story{
-    margin: 15px;
-    flex: 1;
-    text-align: left;
+    /*margin: 15px;
+    text-align: left;*/
+    margin-bottom: 40px;
 }
 
 .about-section__content__story p{

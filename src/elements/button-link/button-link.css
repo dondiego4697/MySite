@@ -1,25 +1,25 @@
 .button-link {
-    width: 120px;
-    margin: auto auto;
-    background-color: #00bcd4;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 0;
+    background-color: #00bcd4 !important;
     text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 200;
     font-family: 'Roboto:400', sans-serif;
-    text-decoration: none;
+    text-decoration: none !important;
     letter-spacing: 0.5px;
-    border-radius: 2px;
-    background-clip: padding-box;
-    padding: 14px 25px;
+    padding-right: 15px;
+    padding-left: 15px;
     color: white;
-    outline: none;
-    overflow: hidden;
-    transition: background-color .3s;
-    webkit-transition: background-color .3s;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-}
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+   }
 
 .button-link:hover {
-    background-color: #008ea4;
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+    background-color: #008ea4 !important;
+    color: white;
+}
+.button-link:focus {
+    background-color: #008ea4 !important;
+    color: white;
 }

@@ -12,11 +12,11 @@ export default class ButtonLink extends React.Component {
     render() {
         if(this.props.data.isLocale){
             return (
-                <a href={`#${this.props.data.href}`} className="button-link"><span>{this.props.data.name}</span></a>
+                <a href={`#${this.props.data.href}`} className="waves-effect waves-light btn-large button-link"><span>{this.props.data.name}</span></a>
             )
         } else {
             return (
-                <a href={this.props.data.href} className="button-link" target="_blank"><span>{this.props.data.name}</span></a>
+                <a href={this.props.data.href} className="waves-effect waves-light btn-large button-link" target="_blank"><span>{this.props.data.name}</span></a>
             )
         }
     }
