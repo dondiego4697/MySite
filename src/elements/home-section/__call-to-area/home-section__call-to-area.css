@@ -17,8 +17,5 @@
 
 .home-section__call-to-area__fab i{
     color: #444444 !important;
-    font-size: 1.6rem;
-    width: inherit;
-    display: inline-block;
-    text-align: center;
+    line-height: 59.5px !important;
 }

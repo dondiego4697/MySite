@@ -27,7 +27,7 @@ export default class AboutSection extends React.Component {
             <section id="about" className="about-section">
                 <Grid>
                     <Row>
-                        <div className="about-section__inner">
+                        <div className="about-section__content">
                             <Col md={4} sm={12}>
                                 <div className="about-section__content__story">
                                     <h3 className="about-section__content__text_subtitle">My story</h3>
@@ -50,7 +50,8 @@ export default class AboutSection extends React.Component {
                                         data={{
                                             href: 'http://icancv.ru/dondiego/',
                                             name: 'view resume',
-                                            isLocale: false
+                                            isLocale: false,
+                                            iconName: 'account_circle'
                                         }}/>
                                 </div>
                             </Col>
@@ -63,6 +64,13 @@ export default class AboutSection extends React.Component {
                                 <div className="about-section__content__information">
                                     <h3 className="about-section__content__text_subtitle">Personal information</h3>
                                     {listInfoItems}
+                                    <div className="about-section__content__information__social">
+                                        <ul>
+                                            <li><a href="#" className="btn-floating waves-effect waves-light"><i className="material-icons">send</i></a></li>
+                                            <li><a href="#" className="btn-floating waves-effect waves-light"><i className="material-icons">send</i></a></li>
+                                            <li><a href="#" className="btn-floating waves-effect waves-light"><i className="material-icons">send</i></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </Col>
                         </div>

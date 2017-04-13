@@ -18,3 +18,12 @@ h5.about-section__content__information_item span{
     min-width: 70px;
     display: inline-block;
 }
+
+.about-section__content__information__social{
+    margin: 25px 0 0;
+}
+.about-section__content__information__social ul li {
+    display: inline-block;
+    margin-right: 8px;
+    background-color: white;
+}

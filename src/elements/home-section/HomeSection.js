@@ -28,15 +28,16 @@ export default class HomeSection extends React.Component {
                                             <span>{this.props.data.name}</span>
                                         </h1>
                                         <h2 className="home-section__content__text_subtitle">{this.props.data.subtitle}</h2>
-                                        <ButtonLink data={{href: 'contacts', name: 'hire me', isLocale: true}}/>
+                                        <ButtonLink data={{href: 'contacts', name: 'hire me', isLocale: true, iconName: 'send'}}/>
                                     </div>
                                 </div>
                             </Col>
                         </Row>
                     </Grid>
                     <div className="home-section__call-to-area">
-                        <a href="#about" className="btn-floating btn-large home-section__call-to-area__fab">
-                            <i className="mdi-navigation-expand-more"></i></a>
+                        <a href="#about" className="btn-floating btn-large home-section__call-to-area__fab scale-transition">
+                            <i className="material-icons">keyboard_arrow_down</i>
+                        </a>
                     </div>
                 </div>
             </section>

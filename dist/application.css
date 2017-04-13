@@ -138,10 +138,7 @@
 
 .home-section__call-to-area__fab i{
     color: #444444 !important;
-    font-size: 1.6rem;
-    width: inherit;
-    display: inline-block;
-    text-align: center;
+    line-height: 59.5px !important;
 }.button-link {
     height: 50px;
     line-height: 50px;
@@ -166,6 +163,12 @@
 .button-link:focus {
     background-color: #008ea4 !important;
     color: white;
+}
+
+a.button-link > i {
+    font-size: 26px;
+    margin-right: 8px;
+    float: left !important;
 }.about-section {
     /*height: calc(100vh);*/
     height: 2000px;
@@ -179,24 +182,24 @@
     .about-section .container{
         width: 85%;
     }
-}
-
-@media only screen and (max-width: 993px){
-    .about-section__inner{
-        margin: 15px 0 !important;
-    }
-}
-
-.about-section__inner{
-    margin: 60px 0;
-}
-.about-section__content{
+}/*.about-section__content{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 45px 15px;
-}.about-section__content__avatar{
+}*/
+
+@media only screen and (max-width: 993px){
+    .about-section__content{
+        margin: 15px 0 !important;
+    }
+}
+
+.about-section__content{
+    margin: 60px 0;
+}
+.about-section__content__avatar{
     text-align: center;
     margin-bottom: 40px;
     /*margin: 15px;
@@ -226,6 +229,15 @@ h5.about-section__content__information_item{
 h5.about-section__content__information_item span{
     min-width: 70px;
     display: inline-block;
+}
+
+.about-section__content__information__social{
+    margin: 25px 0 0;
+}
+.about-section__content__information__social ul li {
+    display: inline-block;
+    margin-right: 8px;
+    background-color: white;
 }.about-section__content__story{
     /*margin: 15px;
     text-align: left;*/
