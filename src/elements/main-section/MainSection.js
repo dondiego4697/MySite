@@ -42,8 +42,9 @@ export default class MainSection extends React.Component {
                 <NavBar
                     navList={{about: 'About Me', resume: 'Resume', portfolio: 'Portfolio', contact: 'Contact'}}/>
                 <HomeSection data={{name: 'Denis Stepanov', subtitle: 'Web & Android developer from Moscow'}}/>
-                <AboutSection infoItemsList ={{Name: 'Denis Stepanov', Age: '19 Years', Phone: '+0123456789',
-                Email: 'email@yahoo.com', Address: 'Moscow'}}
+                <AboutSection infoItemsList ={
+                    {Name: 'Denis Stepanov', Age: '19 Years', Phone: '+79851425999',
+                Email: 'dondiego4697@mail.com', Address: 'Moscow'}}
                               socialList={[{href: 'https://vk.com/proudraccoon', iconClass: 'fa fa-vk'},
                                   {href: 'https://github.com/dondiego4697', iconClass: 'fa fa-github'},
                                   {href: 'mailto:dondiego4697@mail.ru', iconClass: 'fa fa-envelope-o'},
