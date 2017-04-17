@@ -252,6 +252,12 @@ h5.about-section__content__information_item span{
     margin-bottom: 40px;
 }
 
+@media only screen and (max-width: 993px){
+    .about-section__content__story{
+        padding-top: 15px;
+    }
+}
+
 .about-section__content__story p{
     color: #727272;
     font-size: 14px;
