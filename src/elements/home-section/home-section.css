@@ -1,9 +1,0 @@
-.home-section{
-    background: url(/src/img/home-bg.jpg) no-repeat fixed center center / cover;
-}
-
-.home-section__sec-overlay{
-    background: rgba(0,0,0, .7);
-    width: 100%;
-    height: 100%;
-}

@@ -3,8 +3,8 @@
  */
 import * as React from "react";
 
-import "./mynavbar.css";
-import "./__nav-wrapper/mynavbar__nav-wrapper.css";
+import "./mynavbar.scss";
+import "./__nav-wrapper/mynavbar__nav-wrapper.scss";
 
 export default class NavBar extends React.Component {
     constructor(props) {

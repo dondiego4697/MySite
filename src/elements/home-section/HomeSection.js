@@ -2,10 +2,10 @@
  * Created by Denis on 11.04.2017.
  */
 import * as React from "react";
-import "./home-section.css";
-import "./__content/home-section__content.css";
-import "./__content/__text/home-section__content__text.css";
-import "./__call-to-area/home-section__call-to-area.css";
+import "./home-section.scss";
+import "./__content/home-section__content.scss";
+import "./__content/__text/home-section__content__text.scss";
+import "./__call-to-area/home-section__call-to-area.scss";
 import ButtonLink from "../button-link/ButtonLink";
 
 import {Col, Grid, Row} from "react-bootstrap";

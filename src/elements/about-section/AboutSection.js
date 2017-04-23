@@ -2,12 +2,12 @@
  * Created by Denis on 12.04.2017.
  */
 import * as React from "react";
-import "./about-section.css";
-import "./__content/about-section__content.css";
-import "./__content/__avatar/about-section__content__avatar.css";
-import "./__content/__information/about-section__content__information.css";
-import "./__content/__story/about-section__content__story.css";
-import "./__content/__text/about-section__content__text.css";
+import "./about-section.scss";
+import "./__content/about-section__content.scss";
+import "./__content/__avatar/about-section__content__avatar.scss";
+import "./__content/__information/about-section__content__information.scss";
+import "./__content/__story/about-section__content__story.scss";
+import "./__content/__text/about-section__content__text.scss";
 import ButtonLink from "../button-link/ButtonLink";
 
 import {Col, Grid, Row} from "react-bootstrap";

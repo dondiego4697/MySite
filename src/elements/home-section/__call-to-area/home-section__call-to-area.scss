@@ -1,0 +1,21 @@
+.home-section__call-to-area {
+  display: block;
+  width: 100%;
+  position: relative;
+  top: 100%;
+  left: 0;
+  max-height: 1px;
+}
+
+.home-section__call-to-area__fab {
+  left: 50%;
+  margin-left: -27px;
+  position: absolute;
+  bottom: 25px;
+  background-color: #fff !important;
+
+  i {
+    color: #444444 !important;
+    line-height: 59.5px !important;
+  }
+}

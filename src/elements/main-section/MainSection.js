@@ -1,7 +1,7 @@
 /**
  * Created by Denis on 11.04.2017.
  */
-import "./main-section.css";
+import "./main-section.scss";
 import * as React from "react";
 import NavBar from "../navbar/NavBar";
 import HomeSection from "../home-section/HomeSection";
