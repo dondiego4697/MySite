@@ -11,6 +11,12 @@
   }
 }
 
+@media screen and (max-width: 450px) {
+  .home-section__content__text_title {
+    font-size: 45px;
+  }
+}
+
 .home-section__content__text_subtitle {
   font-size: 18px;
   font-weight: 100;

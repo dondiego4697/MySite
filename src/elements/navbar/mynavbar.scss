@@ -1,11 +1,31 @@
 .mynavbar {
-    background: white;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 80px;
-    z-index: 1000;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  background: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  z-index: 1000;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes mynavbar_hidden-anim{
+  from  {  }
+  to { top: -82px;}
+}
+
+@keyframes mynavbar_show-anim{
+  from  { top: -82px; }
+  to { top: 0;}
+}
+
+.mynavbar_hidden{
+  animation: mynavbar_hidden-anim 0.2s linear;
+  animation-fill-mode: forwards;
+}
+
+.mynavbar_show{
+  animation: mynavbar_show-anim 0.2s linear;
+  animation-fill-mode: forwards;
 }
 
