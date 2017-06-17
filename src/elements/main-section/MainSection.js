@@ -28,7 +28,7 @@ export default class MainSection extends React.Component {
                 <HomeSection data={{name: 'Denis Stepanov', subtitle: 'Web & Android developer from Moscow'}}/>
                 <AboutSection infoItemsList={
                     {
-                        Name: 'Denis Stepanov', Age: '19 Years', Phone: '+79851425999',
+                        Name: 'Denis Stepanov', Age: '20 Years', Phone: '+79851425999',
                         Email: 'dondiego4697@mail.com', Address: 'Moscow'
                     }}
                               socialList={[{href: 'https://vk.com/proudraccoon', iconClass: 'fa fa-vk'},

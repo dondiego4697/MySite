@@ -11,6 +11,8 @@ import MaterializeCss from 'materialize-css/dist/css/materialize.css';
 import MaterializeJs from 'materialize-css/dist/js/materialize';
 import FontAwesome from 'font-awesome/css/font-awesome.min.css';
 
+//TODO rewrite components with custom elements and shadow dom
+
 ReactDOM.render(
     <MainSection/>,
     document.getElementById('app')
