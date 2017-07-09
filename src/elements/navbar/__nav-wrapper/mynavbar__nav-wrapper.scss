@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+@media only screen and (max-width: 545px) {
+  .mynavbar__nav-wrapper ul {
+    display: none;
+  }
+}
+
 .mynavbar__nav-wrapper {
   position: relative;
   height: 100%;
@@ -47,6 +53,13 @@
 .brand-logo {
   img {
     height: 37px;
-    margin: 20px 5px 0;
+    margin: 15px 5px 0;
   }
 }
+
+@media only screen and (max-width: 992px) {
+  nav .brand-logo {
+    left: 45px !important;
+  }
+}
+

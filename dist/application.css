@@ -36,6 +36,10 @@
   margin: 0;
   padding: 0; }
 
+@media only screen and (max-width: 545px) {
+  .mynavbar__nav-wrapper ul {
+    display: none; } }
+
 .mynavbar__nav-wrapper {
   position: relative;
   height: 100%;
@@ -72,7 +76,11 @@
 
 .brand-logo img {
   height: 37px;
-  margin: 20px 5px 0; }
+  margin: 15px 5px 0; }
+
+@media only screen and (max-width: 992px) {
+  nav .brand-logo {
+    left: 45px !important; } }
 .home-section {
   background: url(/src/img/home-bg.jpg) no-repeat fixed center center/cover; }
 
@@ -159,7 +167,6 @@ a.button-link > i {
   margin-right: 8px;
   float: left !important; }
 .about-section {
-  height: 100vh;
   font-family: 'Roboto:400', sans-serif;
   position: relative;
   padding-top: 60px; }

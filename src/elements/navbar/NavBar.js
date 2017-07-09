@@ -24,19 +24,19 @@ export default class NavBar extends React.Component {
         window.removeEventListener('scroll', this.scrollListener.bind(this));
     }
 
-    scrollListener(){
+    scrollListener() {
         let currScroll = window.pageYOffset;
-        if(window.pageYOffset > 100 && this.prevScroll < currScroll){
+        if (window.pageYOffset > 100 && this.prevScroll < currScroll) {
             this.navEl.classList.add('mynavbar_hidden');
             this.navEl.classList.remove('mynavbar_show');
-        } else if(window.pageYOffset > 100 && this.prevScroll > currScroll){
+        } else if (window.pageYOffset > 100 && this.prevScroll > currScroll) {
             this.navEl.classList.add('mynavbar_show');
             this.navEl.classList.remove('mynavbar_hidden');
         }
         this.prevScroll = currScroll;
     }
 
-    clickListener(){
+    clickListener() {
         if (event.target instanceof HTMLAnchorElement && event.target.getAttribute('href').match(/^#/)) {
             event.preventDefault();
             this.scroll(event.target.getAttribute('href'));
@@ -54,13 +54,14 @@ export default class NavBar extends React.Component {
 
     render() {
         const listItems = Object.keys(this.props.navList).map((key) => {
-            return <li key={`li-${key.toString()}`}><a href={`#${key.toString()}`}>{this.props.navList[key]}</a>
-            </li>;
+            return <li key={`li-${key.toString()}`}><a id={this.props.navList[key].id} href={`#${key.toString()}`}>{this.props.navList[key].name}</a></li>;
         });
 
         return (
             <nav className="mynavbar"
-                ref={(nav)=>{this.navEl = nav}}>
+                 ref={(nav) => {
+                     this.navEl = nav
+                 }}>
                 <div className="mynavbar__nav-wrapper">
                     <a href="#home" className="brand-logo">
                         <img src="/src/img/logo.png" alt=""/>
