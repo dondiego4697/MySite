@@ -24,12 +24,11 @@ export default class MainSection extends React.Component {
         return (
             <div>
                 <NavBar
-                    navList={{about: {name: 'About Me', id: 'nav_about-me'}, resume: {name: 'Resume', id: 'nav_resume'},
-                        portfolio: {name: 'Portfolio', id: 'nav_portfolio'}, contact: {name: 'Contact', id: 'nav_contact'}}}/>
-                <HomeSection data={{name: 'Denis Stepanov', subtitle: 'Web & Android developer from Moscow'}}/>
+                    navList={{about: {name: 'About Me', id: 'nav_about-me'}}}/>
+                <HomeSection data={{name: 'Denis Stepanov', subtitle: 'Web developer from Russia'}}/>
                 <AboutSection infoItemsList={
                     {
-                        Name: 'Denis Stepanov', Age: '20 Years', Phone: '+79851425999',
+                        Name: 'Denis Stepanov', Age: `${Math.floor((Date.now() - new Date(1997, 5, 4)) / 1000 / 3600 / 24 / 365) } Years`, Phone: '+79851425999',
                         Email: 'dondiego4697@mail.ru', Address: 'Moscow'
                     }}
                               socialList={[{href: 'https://vk.com/proudraccoon', iconClass: 'fa fa-vk'},
