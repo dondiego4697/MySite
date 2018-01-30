@@ -25,10 +25,10 @@ export default class MainSection extends React.Component {
             <div>
                 <NavBar
                     navList={{about: {name: 'About Me', id: 'nav_about-me'}}}/>
-                <HomeSection data={{name: 'Denis Stepanov', subtitle: 'Web developer from Russia'}}/>
+                <HomeSection data={{name: 'Denis Stepanov', subtitle: 'Web developer from Moscow'}}/>
                 <AboutSection infoItemsList={
                     {
-                        Name: 'Denis Stepanov', Age: `${Math.floor((Date.now() - new Date(1997, 5, 4)) / 1000 / 3600 / 24 / 365) } Years`, Phone: '+79851425999',
+                        Name: 'Denis Stepanov', Age: `${Math.floor((Date.now() - new Date(1997, 5, 4)) / 1000 / 3600 / 24 / 365) } Years`, Phone: '+79877135532',
                         Email: 'dondiego4697@mail.ru', Address: 'Moscow'
                     }}
                               socialList={[{href: 'https://vk.com/proudraccoon', iconClass: 'fa fa-vk'},

@@ -18,7 +18,7 @@ export default class AboutSection extends React.Component {
     }
 
     render() {
-        const history = `Hello, I'm a Web and Android Developer from Moscow, Russia. I was born in a small town Yoshkar-Ola. In 2004 I began my studies at the Lyceum named after M.V. Lomonosov and graduated in 2015. Nowadays I study Information Technology at Bauman Moscow State Technical University. I am in my second year, in the "Information processing and control systems" department. I am also studying Software Engeneering. I can handle different kinds of problems, and solve them in various ways in short terms.`;
+        const history = `Hello, I'm a Web and Android Developer from Moscow, Russia. I was born in a small town Yoshkar-Ola. In 2004 I began my studies at the Lyceum named after M.V. Lomonosov and graduated in 2015. Nowadays I study Information Technology at Bauman Moscow State Technical University. I am in my third year, in the "Information processing and control systems" department. I am also studying Software Engeneering. I can handle different kinds of problems, and solve them in various ways in short terms.`;
 
         const listInfoItems = Object.keys(this.props.infoItemsList).map((key) => {
             return <h5 key={`pd-item-${key.toString().toLowerCase()}`}
